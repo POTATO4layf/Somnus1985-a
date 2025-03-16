@@ -50,6 +50,7 @@ section {
 
 #home {
     background: url('Somnus\ Logo.png');
+    margin: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
