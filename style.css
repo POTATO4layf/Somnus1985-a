@@ -1,0 +1,95 @@
+body {
+    font-family: 'Indie Flower';
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #fff;
+}
+
+/* Responsive Header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #0c0808;
+    padding: 1em;
+}
+
+/* Responsive Navigation */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f00;
+}
+
+/* Responsive Sections */
+section {
+    padding: 10vh 5%;
+    text-align: center;
+}
+
+#home {
+    background: url('Somnus Logo.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home h1 {
+    font-size: 8vw; /* Responsive font size */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+#about, #game {
+    background: #222;
+}
+
+#contact {
+    background: #0c0808;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px; /* Adjust text size */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #home h1 {
+        font-size: 12vw; /* Adjust heading for smaller screens */
+    }
+
+    section {
+        padding: 8vh 3%;
+    }
+}
